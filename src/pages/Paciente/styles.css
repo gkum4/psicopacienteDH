@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;box-sizing: border-box;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: url('../../assets/background-image.png');
+  background-attachment: fixed;
+}
+
+.days-carousel {
+  margin: 35px 0;
+  position: relative;
+}
+
+.continue-hr {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.16);
+  margin: 0 13px;
+  width: 30px;
+  height: 2px;
+}
+
+.days-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.days-container:first-child .day-item:first-child {
+  margin-left: 20px;
+}
+
+.days-container hr.separator-hr {
+  background: rgba(255, 255, 255, 0.16);
+  margin: 0 13px;
+  width: 30px;
+  height: 2px;
+}
+
+.day-item {
+  height: 65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+}
+
+.day-item h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.today-item {
+  height: 65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.today-item h4 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #313131;
+}
+
+.day-item p {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+#content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 30px;
+}
+
+#emotions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 53px;
+  width: 34.609375%;
+}
+
+#emotions-container h2, #note-container h2 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.emotion-container {
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 17.6px;
+}
+
+.emotion-container:last-child {
+  margin-bottom: 0;
+}
+
+.emotion-container input {
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: grab;
+  outline: none;
+  height: 65px;
+  width: 100%;
+  position: absolute;
+  z-index: 15;
+}
+
+.emotion-container input:active {
+  cursor: grabbing;
+}
+
+.emotion-container input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 65px;
+  background: transparent;
+}
+
+.emotion-container input::-moz-range-thumb {
+  width: 25px;
+  height: 65px;
+  background: transparent;
+}
+
+.emotion-container img {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  left: 18px;
+  z-index: 10;
+}
+
+.emotion-container h3 {
+  position: absolute;
+  z-index: 10;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+.emotion-input-range {
+  position: absolute;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  height: 65px;
+}
+
+#note-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 39px;
+  width: 65.390625%;
+}
+
+#note-container .textarea-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  padding: 23px;
+}
+
+#note-container .textarea-container textarea {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  color: #fff;
+  background: transparent;
+  font-size: 14px;
+  resize: none;
+  cursor: auto;
+}
+
+#note-container .textarea-container textarea::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 14px;
+}
+
+#note-container .textarea-container textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+#note-container .textarea-container textarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+ 
+#note-container .textarea-container textarea::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+}
+
+#note-container .textarea-container textarea::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
