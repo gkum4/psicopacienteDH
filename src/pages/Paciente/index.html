@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="./styles.css"/>
+  <title>Paciente</title>
+</head>
+<body>
+  <h1>Header</h1>
+  <main>
+    <section>
+      <div class="days-carousel"></div>
+    </section>
+
+    <section>
+      <div id="content">
+        <div id="emotions-container">
+          <h2>Como você está se sentindo hoje?</h2>
+
+          <div class="emotion-container">
+            <input id="emotion-input1" type="range" min="0" max="100" value="0">
+            <div id="emotion-input-range1" class="emotion-input-range"></div>
+            <img src="../../assets/emotion-example.svg"/>
+            <h3>Exemplo</h3>
+          </div>
+
+          <div class="emotion-container">
+            <input id="emotion-input2" type="range" min="0" max="100" value="0">
+            <div id="emotion-input-range2" class="emotion-input-range"></div>
+            <img src="../../assets/emotion-example.svg"/>
+            <h3>Exemplo</h3>
+          </div>
+          
+          <div class="emotion-container">
+            <input id="emotion-input3" type="range" min="0" max="100" value="0">
+            <div id="emotion-input-range3" class="emotion-input-range"></div>
+            <img src="../../assets/emotion-example.svg"/>
+            <h3>Exemplo</h3>
+          </div>
+
+          <div class="emotion-container">
+            <input id="emotion-input4" type="range" min="0" max="100" value="0">
+            <div id="emotion-input-range4" class="emotion-input-range"></div>
+            <img src="../../assets/emotion-example.svg"/>
+            <h3>Exemplo</h3>
+          </div>
+
+          <div class="emotion-container">
+            <input id="emotion-input5" type="range" min="0" max="100" value="0">
+            <div id="emotion-input-range5" class="emotion-input-range"></div>
+            <img src="../../assets/emotion-example.svg"/>
+            <h3>Exemplo</h3>
+          </div>
+        </div>
+
+        <div id="note-container">
+          <h2>Gostaria de contar um pouco mais?</h2>
+          <div class="textarea-container">
+            <textarea placeholder="Hoje estou me sentindo..."></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="dataExample.js"></script>
+  <script src="./datesCarousel.js"></script>
+  <script src="./emotionInputs.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tela de Cadastro</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div> LOGO</div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <a href="index.html"><img src="../../assets/de-volta.png" alt="Voltar para a página anterior" width="30px"
+                    height="30px"></a>
+        </div>
+        <div class="formulario">
+            <form>
+                <div id="foto-user">
+                    <img id="img-user" src="../../assets/user.png" alt="Imagem do Usuário">
+                    <label for="alterar-foto" id="label-alt-foto"> Alterar Foto</label>
+                    <input type="file" value="Alterar Foto" id="alterar-foto">
+                </div>
+                <div class="dados-pessoais">
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="dataNasc">Nascimento</label>
+                        <input type="date" id="dataNasc" required></input>
+                    </div>
+
+                    <div class="field">
+                        <label for="genero">Gênero</label>
+                        <select id="genero" required>
+                            <option class="opcao">Masculino</option>
+                            <option class="opcao">Feminino</option>
+                            <option class="opcao">Outros</option>
+                            <option class="opcao">Prefiro não Informar</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" placeholder="(XX)XXXX-XXXX" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="endereco">Endereço</label>
+                        <input type="text" id="endereco" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="user@email.com" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div id="radio">
+                        <label>Sou Psicologo</label>
+                        <input type="radio" name="tipoUsuario" value="psicologo">
+                        <label>Sou Paciente</label>
+                        <input type="radio" name="tipoUsuario" value="paciente">
+                    </div>
+                </div>
+
+                <div id="campo-crp" class="hidden">
+                    <label for="CRP">CRP</label>
+                    <input type="text" name="CRP" placeholder="00/000000-XX">
+                </div>
+
+                <input type="submit" value="Salvar" id="salvar">
+            </form>
+        </div>
+    </main>
+    <script src="../JS/telaCadastro.js"></script>
+</body>
+
+</html>

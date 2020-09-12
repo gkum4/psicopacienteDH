@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Título da página</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+  </head>
+  <body>
+    <div class="modal_cadastro_overlay" id="modal_cadastro_overlay" onclick="fecharModalCadastro()"></div>
+    <div class="modal_adicionar_paciente" id="modal_adicionar_paciente">
+      <div class="header_modal_cadastro">
+        <div class="tituloModalCadastro">Adicionar Novo Paciente</div>
+        <div class="botao_fechar_modal" onclick="fecharModalCadastro()">
+          <div class="fechar fechar_ascendente">
+            <div class="fechar fechar_descendente"></div>
+          </div>
+        </div>
+      </div>
+      <div class="formulario_adicionar_paciente">
+        <div class="campo_formulario_acidionar">
+          <label>Matrícula do Paciente</label>
+          <input required id="matricula_cadastro">
+        </div>
+        <div class="campo_formulario_acidionar">
+          <label for="consulta">Dia da Consulta</label>
+          <select name="consulta" id="dia_consulta_cadastro">
+            <option value="segunda-feira">Seg</option>
+            <option value="terça-feira">Ter</option>
+            <option value="quarta-feira">Qua</option>
+            <option value="quinta-feira">Qui</option>
+            <option value="sexta-feira">Sex</option>
+            <option value="sábado">Sáb</option>
+          </select>
+        </div>
+        <div class="feedback_cadastro" id="feedback_cadastro"></div>
+        <button class="botao_salvar" onclick="cadastrarNovoPaciente(mockListaPacientesParaAdicionar)">Salvar</button>
+      </div>
+
+    </div>
+    <div class="componente_lista_container">
+      <div class="lista_header">
+        <div class="lista_titulo_adicionar">
+          <h1>Lista de Pacientes</h1>
+          <button class="botao_adicionar" onclick="abrirModalCadastro()">
+            <div class="sinal_adicao_vertical"></div>
+            <div class="sinal_adicao_horizontal"></div>
+          </button>
+        </div>
+        <div class="lista_legenda">
+          <p class="legenda_descricao">Próxima Consulta:</p>
+          <div class="legenda_dia">
+            <div class="legenda_dia_consulta"></div>
+          </div>
+        </div>
+      </div>
+      <div class="lista_pacientes" id="lista_pacientes"></div>
+    </div>
+
+    <script src='pacientesMock.js'></script>
+    <script src='pacientesParaAdicionarMock.js'></script>
+    <script src='main.js'></script>
+
+  </body>
+</html>
