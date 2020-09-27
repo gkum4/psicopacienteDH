@@ -52,17 +52,29 @@
       <li> <a href="#"> Meu Perfil </a> </li>
       <li> <a href="#"> Sair </a> </li>
     </ul>
-
   </div>
+
   <main>
     <section>
       <div id="days-carousel"></div>
     </section>
 
     <section>
+      <div id="about-patient-container">
+        <h2>Sobre o paciente:</h2>
+        <div class="textarea-container">
+          <textarea placeholder="O paciente..."></textarea>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="dashed-line"/>
+
+    <section>
       <div id="content">
         <div id="emotions-container">
-          <h2>Como você está se sentindo hoje?</h2>
+          <h2>Como o paciente esté se sentindo:</h2>
 
           <div class="emotion-container">
             <input id="emotion-input1" type="range" min="0" max="100" value="0">
@@ -101,7 +113,7 @@
         </div>
 
         <div id="note-container">
-          <h2>Gostaria de contar um pouco mais?</h2>
+          <h2>Contando um pouco mais:</h2>
           <div class="textarea-container">
             <textarea placeholder="Hoje estou me sentindo..."></textarea>
           </div>
@@ -109,9 +121,14 @@
       </div>
     </section>
 
-    <button class="material-icons" id="save-button">
-      save
-    </button>
+    <section>
+      <div id="psychologist-comments-container">
+        <h2>Comentários do psicólogo:</h2>
+        <div class="textarea-container">
+          <textarea placeholder="O paciente..."></textarea>
+        </div>
+      </div>
+    </section>
   </main>
 
   

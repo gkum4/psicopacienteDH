@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex; 
+  justify-content: space-between;
+  position: relative;
+  width: 100vw;
+  height: 64px;
+  background: #FFFFFF;
+  color: #313131;
+}
+
+.material-icons {
+  background: #FFFFFF;
+}
+
+#logo {
+  color: #313131;
+}
+
+#profile_image {
+  height: 56px;
+  background: #FFFFFF;
+  width: 56px;
+  padding: 3px;
+  border-radius: 512px;
+}
+
+#header button {
+  background: #FFFFFF;
+  display: flex;
+  border: none;
+  margin-right: 24px;
+  font-size: 40px;
+  cursor: pointer;
+  color: #313131;
+}
+
+#menu_content {
+  height: 100%;
+  background: #FFFFFF;
+  z-index: 105;
+  width: 20vw;
+  position: fixed;
+  right: -20vw;
+  top: 0;
+  transition: right 0.25s linear;
+  border-left: 1px solid #FFFFFF;
+  padding: 16px;
+  color: #313131;
+}
+
+#menu_container {
+  background-color: rgba(0,0,0, 0.48);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  color: #313131;
+}
+
+#close-menu-icon {
+  color: #313131;
+}
+
+
+.menu_title {
+  color: #313131;
+}
+
+#profile_menu {
+  position: absolute;
+  border-radius: 512px;
+  color: #313131;
+}
+
+.menu_header {
+  display: flex;
+  justify-content: space-between;
+  color: #313131;
+}
+
+#menu_options li {
+  margin: 12px;
+  color: #313131;
+}
+#menu_options li a {
+  text-decoration: none;
+  color: #313131;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #313131;
+}
+
+.notifications {
+  margin-top: 8vh;
+  float: left;
+  display: none;
+  position: absolute;
+  right: 10vw;
+  z-index: 1;
+  color: #313131;
+}
+.notifications span {
+  display: flex;
+  flex-direction: row-reverse;
+  border: none;
+  color: #313131;
+}
+.notifications ul {
+  border: 1px solid #DCDCDC;
+  text-align: left;
+  list-style-type: none;
+  color: #313131;
+}
+.notifications li {
+  padding: 16px;
+  cursor: pointer;
+  color: #313131;
+}
+.notifications li:hover {
+  background-color: #DCDCDC;
+  color: #313131;
+}
