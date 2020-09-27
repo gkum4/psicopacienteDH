@@ -272,3 +272,23 @@ hr.dashed-line {
 #psychologist-comments-container div {
   margin-bottom: 40px;
 }
+
+#save-button {
+  background-color: #1DA1F2;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: fixed;
+  z-index: 20;
+  bottom: 40px;
+  right: 40px;
+}
+
+#save-button span {
+  width: 40px;
+  height: 40px;
+}
