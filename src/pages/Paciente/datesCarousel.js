@@ -57,19 +57,7 @@ const createDaysCarousel = (numberOfDaysOnDisplay) => {
   });
 }
 
-const alterNumberOfDaysOnDisplay = (x) => {
-  if (x.matches) { // If media query matches
-    daysCarousel.innerHTML = ''
-    createDaysCarousel(5);
-  } else {
-    daysCarousel.innerHTML = ''
-    createDaysCarousel(11);
-  }
-}
 
-const x = window.matchMedia("(max-width: 700px)")
-
-alterNumberOfDaysOnDisplay(x) // Call listener function at run time
-
-x.addListener(alterNumberOfDaysOnDisplay) // Attach listener function on state changes
+daysCarousel.innerHTML = ''
+createDaysCarousel(screen.width / 120);
 

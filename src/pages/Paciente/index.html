@@ -4,13 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="./styles.css"/>
+  <link rel="stylesheet" href="./headerStyles.css"/>
   <link rel="stylesheet" href="./mediaQueries.css"/>
   <title>Paciente</title>
 </head>
 <body>
-  <h1>Header</h1>
+  <div id="header">
+    <span id="logo" style="padding: 28px;"> LOGO </span>
+
+    <div id="menu_container" style="display: none;" onclick="handleMenu()"></div>
+    
+    <div class="navigation">
+      <div class="dropdown_container">
+        <div class="notifications">
+          <ul class="notification_list">
+            <li> Hoje tem consulta </li>
+            <li> Pratique a técnica de respiração </li>
+            <li> Hoje tem consulta </li>
+          </ul>
+        </div>
+        <button class="material-icons" onclick="handleNotification()" onblur="hideNotification()">
+          notifications
+        </button>
+      </div>
+
+      <button onclick="handleMenu()">
+        <img id="profile_image" src="../../assets/sample_image.png">
+      </button>
+    </div>
+
+  </div>
+
+  <div id="menu_content" onblur="handleMenu()">
+    <div class="menu_header" >
+      <span class="material-icons" id="close-menu-icon" onclick="handleMenu()" style="cursor: pointer;">
+        close
+      </span>
+      <span class="menu_title" style="padding-top: 40px;">
+        Joana C. Silva
+      </span>
+      <img id="profile_image" src="../../assets/sample_image.png">
+    </div>
+    
+    <ul style="list-style-type: none; padding-top: 24px;" id="menu_options">
+      <li> <a href="#"> Meu Perfil </a> </li>
+      <li> <a href="#"> Sair </a> </li>
+    </ul>
+
+  </div>
   <main>
     <section>
       <div id="days-carousel"></div>
@@ -68,6 +111,7 @@
   </main>
 
   
+  <script src="header.js"> </script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="dataExample.js"></script>
   <script src="./datesCarousel.js"></script>
